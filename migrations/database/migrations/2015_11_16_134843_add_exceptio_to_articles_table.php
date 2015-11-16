@@ -13,7 +13,7 @@ class AddExceptioToArticlesTable extends Migration
     public function up()
     {
         Schema::table('articles', function (Blueprint $table) {
-            $table->text('except')->nullable;
+            $table->text('except')->nullable();
         });
     }
 
